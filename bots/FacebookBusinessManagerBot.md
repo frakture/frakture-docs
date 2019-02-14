@@ -13,10 +13,3 @@ When paired with a CRM bot, the our Facebook bot can create and sync custom
 audiences daily given a set of criteria. It will keep track of which constituents
 you've pushed into a given audience - this will save you time, and keep your
 audiences up to date.
-
-## Lead Generation
-Facebook forms are a great way to generate new constituents within your CRM, but
-they once they've signed up, they need to make their way into your system. Our
-Facebook Bot can pull leads daily from Facebook and, when paired with another
-CRM Bot, can make sure that new leads are pushed into your CRMs as quickly as
-possible.
