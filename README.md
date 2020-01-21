@@ -1,5 +1,6 @@
-This repository contains documentation for public facing Frakture Services:
+Welcome to the Frakture Documentation Hub.  Here you'll find information about:
 
 - Bots & Automation
-- Warehousing
-- Dashboards
+- Frakture Data Warehousing
+- Frakture Reporting
+- Source Coding and Attribution
