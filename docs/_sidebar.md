@@ -1,2 +1,3 @@
 * [Home](/)
-* [test](test.md "The greatest guide in the world")
+* [Delivery](delivery/ "Delivery Options")
+* [Reports](delivery/reports/ "Reports")
