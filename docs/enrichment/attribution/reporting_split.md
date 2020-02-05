@@ -8,7 +8,7 @@ We're going to look at these numbers in two ways
 	* Via Metadata reporting -- this is using the source code of a transaction do derive reporting information -- what Frakture calls Metadata
 	* Via Attribution reporting -- this is running reports AFTER pairing up transactions with a specific outgoing message
 
-In an ideal world, these should be exactly the same.  Every outgoing message would have a correctly formatted source code, so the attributed reporting numbers for say, Facebook, would exactly match the metadata in that source code.
+In an ideal world, these should be exactly the same.  Every outgoing message would have a unique correctly formatted source code, so the attributed reporting numbers for say, Facebook, would exactly match the metadata in that source code.
 
 In the real world, these can diverge quite quickly.
 
