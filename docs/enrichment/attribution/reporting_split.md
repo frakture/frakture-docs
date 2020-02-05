@@ -4,7 +4,7 @@ Sometimes the easiest questions can actually result in some fairly complicated r
 
 To illustrate the point, let's talk about the easy question "How Much Money did we raise on Facebook in January".
 
-Let's look at just 4 transactions -- 2 that we can directly pair up with a Facebook Ad (via attribution), and two we can't.
+Let's look at just 4 transactions -- 2 that we can directly pair up with a Facebook Ad (via automated attribution), and two we can't.
 
 | Transaction Date         	| Amount | Source Code | Attributed to a FB Ad first published on Jan 1 |
 | ------------- |:-------------:| -----:| -----:|
@@ -24,7 +24,7 @@ Jan 1 -> Jan 31 report
 | Humans | (manual rolloup FB+Facebook)     |    $23| N/A (no attribution) |
 
 
-If you're using humans, you might report $23.  If you're using automation, and you elect the transaction source code as preferred, you'd report $16 (Facebook is easily identifiable to humans, but not bots).  If you want to see how a specific ad published in January performed, you might report $35.
+If you're using humans, you might report $23.  If you're using automated attribution, and you elect the transaction source code as preferred, you'd report $16 (Facebook is easily identifiable to humans, but not bots).  If you want to see how a specific ad published in January performed, you might report $35.
 
 
 Realizing that Frakture supports a number of use cases, here's the tables you'll want to use depending on how you prefer to report:
