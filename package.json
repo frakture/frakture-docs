@@ -1,0 +1,26 @@
+{
+  "name": "frakture-docs",
+  "version": "1.0.0",
+  "description": "Frakture Documentation",
+  "main": "docs/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "docsify start docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frakture/frakture-docs.git"
+  },
+  "keywords": [
+    "frakture",
+    "documentation"
+  ],
+  "author": "Frakture,Inc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frakture/frakture-docs/issues"
+  },
+  "homepage": "https://github.com/frakture/frakture-docs#readme"
+}
