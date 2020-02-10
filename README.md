@@ -1,3 +1,6 @@
+
+# Frakture Documentation
+
 Welcome to the Frakture Documentation Hub.  Here you'll find information about:
 
 - Bots & Automation
