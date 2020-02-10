@@ -5,9 +5,9 @@ Processing transaction and source code information is a multi-stage process, wit
 
 ## Loading data from remote systems -- a.k.a. ETL
 FraktureBots retrieve data from many different sources, in many different ways.  After all the waiting and pulls, and cleaning up and transforming, we get at least the following fields.
-~ts~  - The transaction date
-~amount~ - The transaction amount
-~source code~ - The source code on that transaction
+*ts*  - The transaction date
+*amount* - The transaction amount
+*source code* - The source code on that transaction
 (numerous other fields not relevant to this document)
 
 The result is a table `<bot_prefix>_transaction`, if you're looking at the raw data
