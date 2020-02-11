@@ -51,7 +51,7 @@ In addition to these fields, Frakture appends the following [Attribution](/enric
 | attributed_transactions | The number of monetary transactions that Frakture has attributed to this message |
 | attributed_revenue | The sum total of monetary transactions that Frakture has attributed to this message |
 
-Specific Message schema definitions can be found [here](/schema/message/definitions).
+Specific Message schema definitions can be found [here](/schema/messages).
 
 ## Transactions
 
