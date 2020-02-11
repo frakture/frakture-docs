@@ -44,7 +44,7 @@ The standard message stat fields are described below, along with the standard de
 
 * Systems have different ways of calculating, tracking, and presenting these values. To see how each maps to the source system, check the documentation for that system.
 
-In addition to these fields, Frakture appends the following [Attribution](/enrichment/attribution) fields:
+In addition to these fields, Frakture appends the following [Attribution](/enrichment/attribution/) fields:
 
 | Field | Description |
 | --- | --- |
