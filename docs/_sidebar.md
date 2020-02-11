@@ -1,5 +1,6 @@
 * [Home](/)
 * [ETL](etl/ "Extract, Transform, Load")
+	* [Schema] (schema/ "Warehouse Object Schema")
 
 * [Enrichment](enrichment/ "Data enrichment")
 	* [Attribution](enrichment/attribution/ "Attribution")
