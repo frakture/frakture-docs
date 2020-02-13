@@ -1,6 +1,6 @@
 # The many ways to calculate conversions
 
-Conversions
+Conversions tracking is all about reporting on performance of your communications and marketing.  If you're not tracking conversions, you're basically spraying and praying.  Below we'll cover some common conversion mechanisms, and their pros and cons.
 
 For the purposes of this document, we're going to talk about monetary transactions (purchases, donations, etc), but the same concepts apply to other conversion types (lead generation, signup forms, petitions, etc).
 
