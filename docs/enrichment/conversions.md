@@ -24,7 +24,7 @@ Tag & Pixel is a very common and very effective means of calculating performance
 
 2. 3rd party privacy -- More and more people are becoming sensitive to ubiquitous tracking on the web, and are disabling third party trackers, or explicitly disabling Google and Facebook tracking.  While historically small, this has an increasing effect on the accuracy of T&P tracking.
 
-3. Only on the web -- Many groups organize offline, through direct mail, and more often through newer content and payment platforms (Over The Top TV,Amazon payments, Apple Pay, etc).  T&P management is typically difficult, if not impossible on these channels.  This makes it difficult to calculate cross-channel performance, as you're using multiple different mechanisms.
+3. Only on the web -- Many groups organize offline, through direct mail, and more often through newer content and payment platforms (Over The Top TV,Amazon payments, Apple Pay, etc).  T&P management is typically difficult, if not impossible on these channels.  This makes it difficult to calculate cross-channel performance, as the tracking mechanism varies by platform and by channel.
 
 4. It's time intensive to get the right access, and stay up to date -- If you have full control over every part of your web presence, it's straightforward and well documented to add in tags and pixel code.  However, many companies and organizations use a variety of different platforms, and a variety of different consultants to manage their communications.  Some platforms don't allow for custom javascript, some platforms are locked out because of permissions, etc.  Also, any change to any platform will require someone moderately technical to go update the T&P code -- which can quickly fall out of date.
 
