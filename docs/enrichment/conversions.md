@@ -41,11 +41,11 @@ The major benefits of source code based conversion tracking are:
 
 1. It's NOT an *estimate* -- Because the source code is at the transaction level, every transaction that comes in records a source code, even if that source code is blank (sometimes called white mail).  That means that the money that hits your bank account can be audited against the inbound source codes, and there's no undercount or overcount.
 
-2. It's channel agnostic -- Just about every means of modern communication can attach a code string to a message.  The practice started in direct mail
+2. It's channel agnostic -- Just about every means of modern communication can attach a code string to a message.  The practice started in direct mail, but was quickly extended to web properties, and is now heavily supported on social media and other communication channels.  It's ubiquitous enough that it's unlikely to go about in the next 10, or the next 50, years.
 
 3. It fails nicely -- Unlike some of the Native and T&P trackers based tools that may fail with no further information about why it failed, if you see an uncoded transaction, you can track down and fix where it came from.  It doesn't stop a transaction from going through, or depend on what platform you're using.
 
-4. There's no mucking with javascript, etc -- Almost every transaction processor natively supports attaching a source code to a transaction, WITHOUT coding, and carries that through to their reporting.
+4. There's no mucking with html, javascript, etc -- Almost every transaction processor natively supports attaching a source code to a transaction, WITHOUT cutting and pasting or javascript knowledge, and carries that through to reporting.
 
 5. It's widely understood -- You can have an intelligent conversation about source coding with marketers who have been in the industry for 30 years, or for 30 days.  It's that consistent, decade by decade.
 
@@ -58,6 +58,6 @@ Despite the pros, there are a couple of downsides:
 3. You need to post-process your source codes for message performance -- If you want to know the performance of any given message, like a Facebook post or email, you need to do the work to pair up the messaging data (impressions, clicks, spend) with the conversions.  At Frakture we call this process "attribution".
 
 ## At Frakture
-At Frakture we have built a huge amount of technology for Source Code based conversion tracking.  From generating unique, high quality, source codes, through attribution, through parsing out legacy codes, through deriving insight across channels, Frakture works on the whole process.  We try to take away the downsides of source code tracking, so you can focus on messaging, and not on configuring hunks of code in an obscure web technology.  While our Bots are capable of pulling T&P tracking data, the limits of that conversion tracking quickly becomes apparent as you use more and more technologies.
+At Frakture we have built a huge amount of technology for Source Code based conversion tracking.  From generating unique, high quality source codes, through attribution, through parsing out legacy codes, through deriving insight across channels, Frakture works on the whole process.  We try to take away the downsides of source code tracking, so you can focus on messaging, and not on configuring hunks of code in an obscure web technology.  While our Bots are capable of pulling Native and T&P tracking data, the limits of that conversion tracking quickly becomes apparent as you use more and more technologies.
 
 Use source code based conversion tracking -- it scales better than any other current mechanism.
