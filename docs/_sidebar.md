@@ -9,4 +9,5 @@
 	* [Attribution vs Source Code reporting](enrichment/attribution/reporting_split "Attribution vs Source Code")
 
 * [Delivery](delivery/ "Delivery Options")
+	* [Warehouse](delivery/warehouse/ "Warehouse")
 	* [Reports](delivery/reports/ "Reports")
