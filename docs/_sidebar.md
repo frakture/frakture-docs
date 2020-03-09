@@ -1,6 +1,7 @@
 * [Home](/)
 * [ETL](etl/ "Extract, Transform, Load")
-	* [Schema](schema/ "Warehouse Object Schema")
+	* [Standard Schema](schema/ "Warehouse Object Schema")
+	* [Platform/Bot Details](etl/bots/ "Platform/Bot Details")
 
 * [Enrichment](enrichment/ "Data enrichment")
 	* [Conversion Methods](enrichment/conversions "Conversion overview")
