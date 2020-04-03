@@ -5,7 +5,7 @@
 
 * [Enrichment](enrichment/ "Data enrichment")
 	* [Conversion Methods](enrichment/conversions "Conversion overview")
-	* [Attribution](enrichment/attribution/ "Attribution")
+	* [Attribution Models](enrichment/attribution/models "Attribution Models")
 	* [Source Code Pipeline](enrichment/pipeline "Source Code Pipeline")
 	* [Attribution vs Source Code reporting](enrichment/attribution/reporting_split "Attribution vs Source Code")
 

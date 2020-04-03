@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "docsify start docs"
+    "start": "docsify start docs --port=3333"
   },
   "repository": {
     "type": "git",
