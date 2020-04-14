@@ -1,12 +1,14 @@
 # Attribution Models
 
-How to assign credit for transactions and revenue is not a trivial matter.  In fact it's one that has widely varying strategies, and no 'right' answer.
+Attribution is all about the process of assigning 'credit' for your conversions to different channels and messages.
 
-Attribution in Frakture is heavily tied to source coding -- the process of assigning a source code to transactions and individuals.  Much of the below is relevant to other conversion mechanisms -- see [Conversion Methods](enrichment/conversions "Conversion overview") for more info.
+How to assign credit for transactions and other conversions is not a trivial matter.  In fact it's one that has widely varying strategies, and no 'right' answer.
 
-The online ad world uses very similar terminology, and has heavily infomed Frakture attribution modeling.  The main difference is that online ad models have insight into opens and clicks on a *specific* platform, whereas Frakture mostly tracks data across platforms, which tends to consist of source coding data.  It is not unusual to use both to gather insight into your operations.
+Attribution in Frakture is heavily tied to conversion source coding -- the process of assigning a source code to transactions and individuals.  In order to start assigning credit to different channels, you do need to have quality data gathered about conversions.  Bad data in means bad data out.  See [Conversion Methods](enrichment/conversions "Conversion overview") for more info about how to ensure you're gathering quality conversion data, PRIOR to figuring out how you assign credit about those conversions.
 
-Check out Google and Facebook's partial attribution model explanation:
+The online ad world uses fairly consistent terminology around attribution, and has heavily informed Frakture attribution modeling.  The main difference is that online ad models have insight into opens and clicks on a *specific* platform, whereas Frakture mostly tracks data across platforms, including offline data, which tends to consist of good conversion source coding information.  It is not unusual to use both to gather insight into your communications.
+
+Check out Google and Facebook's attribution model explanations:
 
 <a href="https://support.google.com/google-ads/answer/6259715" target="_blank">About Attribution Models [Google]</a>
 

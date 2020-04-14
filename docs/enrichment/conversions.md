@@ -2,6 +2,8 @@
 
 Conversions tracking is all about reporting on performance of your communications and marketing.  If you're not tracking conversions, you're basically spraying and praying.  Below we'll cover some common conversion mechanisms, and their pros and cons.
 
+Conversion tracking is a necessary pre-requisite for quality attribution.  Without good conversion tracking, you can't attribute those conversions to a channel or message. See [Attribution Models](enrichment/attribution/models "Attribution Models") for more information on what happens *after* a conversion.
+
 For the purposes of this document, we're going to talk about monetary transactions (purchases, donations, etc), but the same concepts apply to other conversion types (lead generation, signup forms, petitions, etc).
 
 ## Native conversion tracking
