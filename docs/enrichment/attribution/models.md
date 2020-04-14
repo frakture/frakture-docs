@@ -4,6 +4,15 @@ How to assign credit for transactions and revenue is not a trivial matter.  In f
 
 Attribution in Frakture is heavily tied to source coding -- the process of assigning a source code to transactions and individuals.  Much of the below is relevant to other conversion mechanisms -- see [Conversion Methods](enrichment/conversions "Conversion overview") for more info.
 
+The online ad world uses very similar terminology, and has heavily infomed Frakture attribution modeling.  The main difference is that online ad models have insight into opens and clicks on a *specific* platform, whereas Frakture mostly tracks data across platforms, which tends to consist of source coding data.  It is not unusual to use both to gather insight into your operations.
+
+Check out Google and Facebook's partial attribution model explanation:
+
+<a href="https://support.google.com/google-ads/answer/6259715" target="_blank">About Attribution Models [Google]</a>
+
+<a href="https://www.facebook.com/business/help/370704083280490?id=399393560487908" target="_blank">About attribution models [Facebook]</a>
+
+
 First, some definitions:
 
 ## Last Click Source Coding
