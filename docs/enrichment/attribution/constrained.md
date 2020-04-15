@@ -18,7 +18,7 @@ It's fairly obvious to humans that these different conditions require some tweak
 
 Automation relies on code and algorithms that work in all the situations, often without any human oversight. 'Tweaking' the rules per situation is not easy -- nor can the effects of that tweaking always be immediately seen.  Because of this, "Constrained" algorithm designs focus first on "Not blowing up", and then effectively work backwards to accommodate the different scenarios.  In the company case above, a constrained design might first start with saying
 
-	"We're going to give out 15% commission *total* on any deal"
+	Give out 15% commission *total* on any deal
 
 That's the constraint.  Then fractions of credit would be given to team members based on how involved they were in the sale.  For example, 10% to the prime rep, the remaining 5% distributed amongst all assistants.  Or perfectly even distribution, etc, etc.  It accomplishes similar goals (crediting people for the sale), but with a design that *cannot blow past the constraint*.
 
