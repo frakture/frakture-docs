@@ -4,7 +4,7 @@ Assigning credit is one of the most difficult tasks to get right at scale -- not
 
 "Unconstrained" and "Constrained" are two different frameworks for assigning credit.
 
-## Unconstrained attribution
+## Unconstrained
 
 To keep the conversation from getting into the weeds, we'll start with a metaphor.  Imagine a company meeting where a director of sales, Sue, is determining how to assign commission to her 10 person sales team.  She starts with giving 10% commission of each signed deal to the rep that closed it.  If someone assisted, they get 3%.  She's experienced, so factors in conditions of clients not paying, early closed contracts, etc, etc.  It works absolutely great.  Company does awesome.
 
@@ -14,7 +14,7 @@ John was one of her sales reps, and moves on to a manager role at a much larger 
 
 It's fairly obvious to humans that these different conditions require some tweaking of the rules depending on the situation.  It's actually pretty straightforward.  In fact, you can probably start listing out a bunch of ways to 'fix' the algorithm (if more than 10 people, cut it to 1% commission, etc, etc).  You'll probably catch a bunch of cases you missed before.  You may even believe that the algorithm is perfect for all scenarios.  But if you're still working in an unconstrained, open-ended process, it's far, far more likely that you're going to miss something, and that algorithm is going to blow up somewhere.
 
-## Constrained attribution
+## Constrained
 
 Automation relies on code and algorithms that work in all the situations, often without any human oversight. 'Tweaking' the rules per situation is not easy -- nor can the effects of that tweaking always be immediately seen.  Because of this, "Constrained" algorithm designs focus first on "Not blowing up", and then effectively work backwards to accommodate the different scenarios.  In the company case above, a constrained design might first start with saying
 
