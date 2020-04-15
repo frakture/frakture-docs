@@ -1,6 +1,6 @@
-# Constrained vs Unconstrained attribution
+# Attribution Design -- Constrained vs Unconstrained attribution
 
-Assigning credit is one of the most difficult tasks to get right at scale -- not least of which because techniques that work in individual or small numbers of situations often deliver weird or just flat-out bad results when applied to other situations.  It comes up in a lot of scenarios, but here we'll focus on designing algorithms and processes for attributing transactions to different messages.
+Assigning credit is one of the most difficult tasks to get right at scale -- not least of which because techniques that work in individual or small numbers of situations often deliver weird or just flat-out bad results when applied to other situations.  It comes up in a lot of scenarios, but here we'll focus on designing algorithms and processes for attributing credit for transactions and revenue to different channels.
 
 "Unconstrained" and "Constrained" are two different frameworks for assigning credit.
 
@@ -16,7 +16,11 @@ It's fairly obvious to humans that these different conditions require some tweak
 
 ## Constrained attribution
 
-Automation relies on code and algorithms that work in all the situations, often without any human oversight. 'Tweaking' the rules per situation is not easy -- nor can the effects of that tweaking always be immediately seen.  Because of this, "Constrained" algorithm designs focus first on "Not blowing up", and then effectively work backwards to accommodate the different scenarios.  In the company case above, a constrained design might first start with saying "We're going to give out 15% commission *total* on any deal" (the constraint).  Then fractions of credit would be given to team members based on how involved they were in the sale.  It accomplishes similar goals (crediting people for the sale), but with a design that *cannot blow past the constraint*.
+Automation relies on code and algorithms that work in all the situations, often without any human oversight. 'Tweaking' the rules per situation is not easy -- nor can the effects of that tweaking always be immediately seen.  Because of this, "Constrained" algorithm designs focus first on "Not blowing up", and then effectively work backwards to accommodate the different scenarios.  In the company case above, a constrained design might first start with saying
+
+	"We're going to give out 15% commission *total* on any deal"
+
+That's the constraint.  Then fractions of credit would be given to team members based on how involved they were in the sale.  For example, 10% to the prime rep, the remaining 5% distributed amongst all assistants.  Or perfectly even distribution, etc, etc.  It accomplishes similar goals (crediting people for the sale), but with a design that *cannot blow past the constraint*.
 
 As long as that constraint is maintained, basically any algorithm you choose won't behave badly.  It may not be perfect -- and lots of tweaks may need to get it just right, but by maintaining that constraint it assures you're not going to get ludicrous results in situations you haven't considered.
 
@@ -24,7 +28,10 @@ As long as that constraint is maintained, basically any algorithm you choose won
 ## Attribution models
 
 Turning to our real use case, attributing transactions to channels, we can lay out an unconstrained model.
-	"Assign credit to the source channel if this message was involved in the transaction, and for any future gifts this person gave if they were new. Make sure not to count the same transaction twice."
+
+	Assign credit to the source channel if this message was involved in the transaction,
+	and for any future gifts this person gave if they were new.
+	Make sure not to count the same transaction twice.
 
 Makes sense.  Of course, if someone was signed up with one channel, and made a transaction from another ... now you've got a decision.  Which channel gets the credit?  Both?  But then we count the same transaction twice, which would lead to reporting double the revenue (unless we tell people to just not do the math - ick).  Uh-oh.  Okay, maybe we tweak it -- we say that in that situation, the most recent channel gets the credit.  Well, now you're basically not crediting the first channel at all, unless they gave directly on it. And etc, etc.  The rules start to multiply, but it's not clear we're getting closer to a foolproof algorithm.
 
@@ -38,7 +45,7 @@ There is, however, an alternative, and that's to use a Constrained attribution m
 
 then we can do all kinds of complicated things, and be assured that the end result isn't going to blow up.  In the attribution world, this is often called Fractional (Fraktional :) attribution.  Rather than coming up with rules to assign credit, and hoping it adds up, we first start with 100%, and then distribute fractions of that whole depending on our rules.
 
-The same information is typically used as an unconstrained model, such as first transaction, most recent message, etc, but instead of assigning full credit based on "if (this) then (that)", constrained attribution starts with 100% of a transaction, and then portions out parts of that different.  So in the above example, you might assign 40% of the credit to the original source channel, and 60% to the most recent channel.  No matter how you do the split, and no matter how many interactions you involve, and no matter how complicated you make it, if you hold to the constraint, you're *assured* you're never going blow up.
+The same information is typically used as an unconstrained model, such as first transaction, most recent message, etc, but instead of assigning full credit based on "if (this) then (that)", constrained attribution starts with 100% of a transaction, and then portions out parts of that to different channels.  So in the above example, you might assign 40% of the credit to the original source channel, and 60% to the most recent channel.  No matter how you do the split, and no matter how many interactions you involve, and no matter how complicated you make it, if you hold to the constraint, you're *assured* you're never going blow up.
 
 There's lots of opinions on the *best* way to attribute -- but as long as they all follow the same constraint, they can be compared and swapped out without affecting the bottom line.
 

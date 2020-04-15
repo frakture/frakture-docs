@@ -8,6 +8,7 @@
 	* [Attribution Models](enrichment/attribution/models "Attribution Models")
 	* [Source Code Pipeline](enrichment/pipeline "Source Code Pipeline")
 	* [Attribution vs Source Code reporting](enrichment/attribution/reporting_split "Attribution vs Source Code")
+	* [Attribution Design - Constraints](enrichment/attribution/constrained "Attribution Design - Constraints")
 
 * [Delivery](delivery/ "Delivery Options")
 	* [Warehouse](delivery/warehouse/ "Warehouse")
