@@ -12,3 +12,6 @@ The source code pipeline provides a sequence of automatic and human based tools 
 
 ## [Attribution vs Source Code reporting](enrichment/attribution/reporting_split "Attribution vs Source Code")
 There's two major reporting structures -- one based on attributed transactions, and one based on source code performance.  Knowing what you're using is important.
+
+## [Standard Source Code Elements](enrichment/source_code_elements "Source Code ")
+Each source code can embed lots of pieces of information.  Frakture calls each of these pieces of information a 'source code element' Frakture has established standards for the most common elements, but can operate with arbitrary source codes.

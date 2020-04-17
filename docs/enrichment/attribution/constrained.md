@@ -10,9 +10,10 @@ To keep the conversation from getting into the weeds, we'll start with a metapho
 
 This is an example of unconstrained attribution.  Developing smart rules to incentivize good behavior.  There's absolutely nothing wrong with it.  But if you change some of the conditions, it can go absolutely haywire.
 
-John was one of her sales reps, and moves on to a manager role at a much larger company.  He works his way up, and eventually is in charge of 30 people.  Having had such a good experience with Sue's model, he implements it with his new team.  Within the first month it's pretty clear that things are going wrong.  The different product requires a lot more people involved with the sale -- so suddenly he's paying out 3% commission to 10 assistants for every sale.  Way too much.  Budgets get missed, staplers go missing, absolute bedlam.  Company fails.
+John was one of her sales reps, and moves on to a manager role at a much larger company.  He works his way up, and eventually is in charge of 30 people.  Having had such a good experience with Sue's model, he implements it with his new team.  Within the first month it's pretty clear that things are going wrong.  The different product requires a lot more people involved with the sale -- so suddenly he's paying out 3% commission to 10 assistants for every sale.  Way too much.  Budgets get missed, staplers go missing, absolute bedlam.  Company fails.  This is an example of "over-attribution".
 
 It's fairly obvious to humans that these different conditions require some tweaking of the rules depending on the situation.  It's actually pretty straightforward.  In fact, you can probably start listing out a bunch of ways to 'fix' the algorithm (if more than 10 people, cut it to 1% commission, etc, etc).  You'll probably catch a bunch of cases you missed before.  You may even believe that the algorithm is perfect for all scenarios.  But if you're still working in an unconstrained, open-ended process, it's far, far more likely that you're going to miss something, and that algorithm is going to blow up somewhere.
+
 
 ## Constrained
 
@@ -54,3 +55,19 @@ Check out Google and Facebook's attribution model explanations for different exa
 <a href="https://support.google.com/google-ads/answer/6259715" target="_blank">About Attribution Models [Google]</a>
 
 <a href="https://www.facebook.com/business/help/370704083280490?id=399393560487908" target="_blank">About attribution models [Facebook]</a>
+
+
+## Real world pros and cons
+
+At scale, there are some other considerations when calculating different models
+
+### Over- and Under- attributing
+
+As in our previous metaphor, unconstrained models in the real world often suffer from over- or under- attribution, where the same transaction can be credited 200%, or only 10%.  Typically this arises when blending lots of rules.  For example --
+
+	Give credit to the first time this person was added
+	.... 10 other rules ....
+	In cases where they unsubscribed, don't give any credit to the origin, give credit to the last click
+	.... 10 other rules ....
+
+These 22 rules actually hide a conflict -- what do you do with recurring transactions from the origin?  You could add another rules, but that just makes it even more complicated.  Although this appears to be resolvable, with many different related conditions, it is very, very easy to over-credit or under-credit.  And typically there's no easy way to deduce when you are over-crediting, as you're not following any constraints -- you're effectively hoping you've thought of everything.
