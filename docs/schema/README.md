@@ -67,3 +67,24 @@ The standard fields collected for monetary transactions are:
 | source_code* | An identifier from the source system that identifies how a transaction entered the system |
 
  * Systems have different ways of representing source code information, and occasionally this is spread across multiple fields.
+
+## People
+
+Person records within a given system can be found in `<table_prefix>person`. The standard person fields pulled into the Frakture warehouse are:
+
+| Field | Description |
+| --- | --- |
+| remote_person_id | The unique identifier for this record in the source system |
+| date_created | The date this record was created in the source system |
+| remote_last_modified | The date this record was last modified in the source system. **Note:** Not all systems report the date that a record was last modified - in this case this field is left null |
+| given_name | The given name as reported by the source system. Normally corresponds to *First* name |
+| family_name | The family name as reported by the source system. Normally corresponds to *Last* name |
+| email | The email address associated with this record in the source system. If the source system stores multiple email addresses, Frakture defaults to the *Primary* email address. A standard Frakture deployment only loads one email address per person record |
+| phone | The phone number associated with this record in the source system. If the source system stores multiple phone numbers, Frakture defaults to the *Primary* phone number. A standard Frakture deployment only loads one phone number per person record |
+| street_1 | The first line of the *Primary* street address associated with this record in the source system |
+| street_2 | The second line of the *Primary* street address associated with this record in the source system |
+| city | The city of the *Primary* street adddress associated with this record in the source system |
+| region | The region (state, province, territory, etc) of the *Primary* street address associated with this record in the source system |
+| country | The country of the *Primary* street address associated with this record in the source system |
+| postal_code | The postal code (zip code) of the *Primary* street address associated with this record in the source system |
+| source_code | The *source_code* used when this record was created in the source system. Used as an *origin_source_code* for purposes of attribution |
