@@ -88,3 +88,34 @@ Person records within a given system can be found in `<table_prefix>person`. The
 | country | The country of the *Primary* street address associated with this record in the source system |
 | postal_code | The postal code (zip code) of the *Primary* street address associated with this record in the source system |
 | source_code | The *source_code* used when this record was created in the source system. Used as an *origin_source_code* for purposes of attribution |
+
+## Advocacy Actions
+
+For systems that support it, advocacy actions can be loaded into the warehouse on a per-person per-action basis - each action that a person takes is stored as an individual record in the `<table_prefix>advocacy_action` table. 
+
+| Field | Description |
+| --- | --- |
+| remote_action_id | The unique identifier for this record in the source system. **Note:** many source systems (such as Engaging Networks and Convio Lumninate) do not provide a unique identifier for individual actions taken. In these cases Frakture does it's best to assign a unique identifier to each action |
+| remote_person_id | The unique identifier for this person record in the source system |
+| ts | The timestamp recorded by the source system of when the action took place |
+| source_code | The *source code* associated with this action, based on the link used to take the action |
+| campaign_name | The name of the campaign associated with this action |
+
+## Per-Person Message Stats
+
+For systems that support it, mailing actions (opens, clicks, etc) can be loaded into the warehouse on a per-person per-mailing basis - each message that a person receives is stored as an individual record in the `<table_prefix>per_person_message_stat` table
+
+| Field | Description |
+| --- | --- |
+| message_id | The Frakture assigned ID for this message. Links to the `<table_prefix>message` table using `message_id` |
+| remote_person_id | The unique identifier for this person record in the source system |
+| ts | The last time these stats were updated within the source system |
+| recieved | Whether or not (1/0) this message was received by the person. Some systems _only_ report those who received a message |
+| opened | Whether or not (1/0) the source system recorded this person opening the message |
+| clicked | Whether or not (1/0) the source system recorded this person clicking a link within the message |
+| action | Wether or not (1/0) the source system recorded this person taking an action inspired by this message |
+| hard_bounce | For email messages - whether the source system records a hard_bounce for this person |
+| soft_bounce | For email messages - whether the source system records a soft_bounce for this person |
+| unsubscribe | Whether or not (1/0) the source system recorded this person unsubscribing as a result of this message |
+
+**Note** General message stats can be found in `<table_prefix>_message_summary` tables. For general reporting on how a message performed, we recommend using those tables. The *per_person_message_stat* tables be used for deeper reporting - how a message performed acros a given segment.
