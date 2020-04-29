@@ -4,7 +4,7 @@ Processing transaction and source code information is a multi-stage process, wit
 
 
 ## 1.Loading data from remote systems -- a.k.a. ETL
-FraktureBots retrieve data from many different sources, in many different ways.  After all the waiting and pulls, and cleaning up and transforming, we get at least the following fields.
+Frakture retrieve data from many different sources, in many different ways.  After all the waiting and pulls, and cleaning up and transforming, we get at least the following fields.
 
 * ts  - The transaction date
 * amount - The transaction amount
@@ -31,13 +31,13 @@ For transactions that are NOT source coded in their source system, Frakture will
  based on the name of the payment form (if available in the source platform).
 
 
-## 2.Metadata tables
+## 3. Metadata tables
 
 ### Transactions
 Frakture stores transaction overrides in a global metadata table.  Other data exists in that table, as well, and note that this is an account-wide table.  It can have no prefix (transaction_metadata), or be prefixed with the account_id (`<account_id>_transaction`).
 
 
-## 3.Overriding source codes -- (optional)
+## 4. Overriding source codes -- (optional)
 
 ### Transactions
 Sometimes the data that's coming in is difficult to parse, or was never coded, or you need to do some human cleaning.
@@ -52,7 +52,7 @@ In this sheet, there are two columns
 This data will be stored in the `<global_prefix>transaction_metadata_override` table.
 
 
-## 4.Source code dictionary
+## 5. Source code dictionary
 Every source code that is used anywhere in Frakture is put into the <global_prefix>source_code_dictionary table.  This is the canonical list of source codes, actively in use or perhaps slated for use later.  It also contains 0-N columns to represent the broken-out elements of that source code.  For example, an organization may have configured 'channel_prefix' and 'campaign_name' source code elements -- those columns exist in the source code dictionary.
 
 `<global_prefix>_source_code_dictionary` -- Full list of source codes, and columns for elements of that source code.
@@ -61,7 +61,7 @@ Source code elements are organization specific, and are not stored in the wareho
 
 There is also a `<element>_label` field for every element in the source code dictionary -- in our example, the element value would be "FB", and the label would be "Facebook".  Labels are suitable for human viewable reporting, whereas the value is what the Bots and tables work with.
 
-## 5.Auto-parsing of source codes
+## 6. Auto-parsing of source codes
 
 For every source code that comes in, we need to break out -- or parse -- individual elements from a source code.  For example, we need to extract the Facebook (FB) element from EOQ_FB_C1_2020, and the campaign name (End of Quarter).
 
@@ -79,11 +79,11 @@ During this auto-parsing stage, Frakture will go through the different formats a
 | v2_PITT_YT_TW         | v2_{{signer}}_{{channel_detail}}_{{campaign}}  | YouTube | Twitter | Pitt|
 | website         | (unknown)  | ? | ? | |
 
-## 6.Overrides of source code parsing (Optional)
+## 7. Overrides of source code parsing (Optional)
 Unfortunately automated parsing of source codes can only go so far.  Often a human must be involved to apply some intelligence to a parsing of a source code.  This is particularly necessary when there's lots of legacy, or poorly formed source codes.  To allow for this, Frakture supports pushing the full source code dictionary to a Google spreadsheet, where humans can assign values to all the elements.  The source code tab is named `<account_id>_source_code`.
 
 
-## 7.Source code aggregation by date
+## 8. Source code aggregation by date
 
 To optimize reporting by source code, Frakture aggregates dozens of statistics by source code, and caches them in the source_code_stats_by_date table.
 
@@ -92,7 +92,7 @@ To optimize reporting by source code, Frakture aggregates dozens of statistics b
 This includes things like total transactions and revenue, and messaging data like impressions/clicks/spend, based on the primary_source_code of a message.
 
 
-## 7.Source code aggregation all time
+## 9. Source code aggregation all time
 
 To optimize reporting by source code, Frakture aggregates dozens of statistics by source code, and caches them in the source_code_stats_by_date table.
 
@@ -102,7 +102,7 @@ This includes things like total transactions and revenue, and messaging data lik
 
 
 
-## 8. Pulling it all together -- the summary tables
+## 10. Pulling it all together -- the summary tables
 
 A typical final report or view will summarize data broken out by element - "How much money did we raise, grouped by channel?"  "How did each of our campaigns do?", etc.  To enable this, there are two standard Frakture views:
 
