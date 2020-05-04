@@ -15,3 +15,6 @@ There's two major reporting structures -- one based on attributed transactions, 
 
 ## [Standard Source Code Elements](enrichment/source_code_elements "Source Code ")
 Each source code can embed lots of pieces of information.  Frakture calls each of these pieces of information a 'source code element' Frakture has established standards for the most common elements, but can operate with arbitrary source codes.
+
+## [Transaction Refunds](enrichment/refunds "Refunds")
+How do deal with refunds for donations or transactions is a very polarizing topic - we try to help you navigate the different options.

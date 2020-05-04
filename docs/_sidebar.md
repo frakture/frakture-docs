@@ -7,9 +7,10 @@
 	* [Conversion Methods](enrichment/conversions "Conversion overview")
 	* [Attribution Models](enrichment/attribution/models "Attribution Models")
 	* [Source Code Pipeline](enrichment/pipeline "Source Code Pipeline")
-	* [Standard Source Code Elements](enrichment/source_code_elements "Source Code ")
 	* [Attribution vs Source Code reporting](enrichment/attribution/reporting_split "Attribution vs Source Code")
+	* [Standard Source Code Elements](enrichment/source_code_elements "Source Code ")
 	* [Attribution Design - Constraints](enrichment/attribution/constrained "Attribution Design - Constraints")
+	* [Transaction Refunds](enrichment/refunds "Refunds")
 
 * [Delivery](delivery/ "Delivery Options")
 	* [Warehouse](delivery/warehouse/ "Warehouse")
