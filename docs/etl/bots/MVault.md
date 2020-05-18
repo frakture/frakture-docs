@@ -19,6 +19,6 @@ PBS MVault Bot is capable of pulling (and pushing) MVault membership data. The F
 |pbs_mvault_notes|Text notes that have been entered for the membership|
 |pbs_mvault_offer|Defaults to `MVOD`|
 |pbs_mvault_profile_uid|Unique identifier of the individual owning the membership within MVault|
-|pbs_mvault_provider|The UID of the station providing membership|
+|pbs_mvault_provider|The login provider of the individual owning the membership within MVault|
 |pbs_mvault_provisional|Whether or not this is a provisional membership|
 |pbs_mvault_status|Whether or not the member has access.|
