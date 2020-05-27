@@ -1,1 +1,24 @@
-No fields documented
+|field|description|source|
+|---,---,---|
+|adset_id|||
+|adset_name|||
+|ad_type|||
+|bot_id|||
+|campaign_id|||
+|campaign_name|||
+|campaign_type|||
+|dlv_id|||
+|edit_url|||
+|fb_preview_feed_link|||
+|fb_preview_share_link|||
+|image_url|||
+|label|||
+|link_url|||
+|message_id|||
+|preview_url|||
+|primary_source_code|||
+|publish_date|||
+|remote_id|||
+|status|||
+|subject|||
+|text_content|||
