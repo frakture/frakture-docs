@@ -7,8 +7,7 @@
 |campaign_id|FB Campaign ID||
 |campaign_name|FB Campaign Name||
 |campaign_type|||
-|dlv_id|||
-|edit_url|||
+|edit_url|Link to Ad definition in Business Manager||
 |fb_preview_feed_link|||
 |fb_preview_share_link|||
 |image_url|URL of the Ad Image, if there is one||
