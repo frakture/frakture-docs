@@ -21,3 +21,25 @@
 |status|||
 |subject|||
 |text_content|Text content of FB Ad||
+
+Stats Fields
+
+|field|description|source|
+|---|---|---|
+|action_comment|||
+|action_lead|||
+|action_like|||
+|action_post|||
+|action_post_engagement|||
+|action_post_reaction|||
+|clicks|||
+|engagements|||
+|frequency|||
+|impressions|||
+|likes|||
+|reach|||
+|revenue|||
+|spend|||
+|total_actions|||
+|transactions|||
+|unique_clicks|||
