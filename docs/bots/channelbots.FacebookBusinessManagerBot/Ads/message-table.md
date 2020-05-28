@@ -1,24 +1,24 @@
 |field|description|source|
 |---|---|---|
-|adset_id|||
-|adset_name|||
+|adset_id|FB Adset ID||
+|adset_name|FB Adset Name||
 |ad_type|||
-|bot_id|||
-|campaign_id|||
-|campaign_name|||
+|bot_id|ID of the Bot pulling this Ad||
+|campaign_id|FB Campaign ID||
+|campaign_name|FB Campaign Name||
 |campaign_type|||
 |dlv_id|||
 |edit_url|||
 |fb_preview_feed_link|||
 |fb_preview_share_link|||
-|image_url|||
-|label|||
-|link_url|||
-|message_id|||
-|preview_url|||
-|primary_source_code|||
-|publish_date|||
-|remote_id|||
+|image_url|URL of the Ad Image, if there is one||
+|label|Ad label||
+|link_url|URL the Ad presents as a link||
+|message_id|Frakture assigned message id||
+|preview_url|Link to an Ad preview||
+|primary_source_code|Primary Source Code, pulled from Ad contents||
+|publish_date|First date this Ad was run on FB||
+|remote_id|FB Ad ID||
 |status|||
 |subject|||
-|text_content|||
+|text_content|Text content of FB Ad||
