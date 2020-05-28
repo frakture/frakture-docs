@@ -1,5 +1,5 @@
 |field|description|source|
-|---,---,---|
+|---|---|---|
 |adset_id|||
 |adset_name|||
 |ad_type|||
