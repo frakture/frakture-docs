@@ -26,20 +26,20 @@ Stats Fields
 
 |field|description|source|
 |---|---|---|
-|action_comment|||
-|action_lead|||
-|action_like|||
-|action_post|||
-|action_post_engagement|||
-|action_post_reaction|||
-|clicks|||
-|engagements|||
+|action_comment|The number of comments attributed to this ad||
+|action_lead|The number of leads attributed to this ad||
+|action_like|The number of likes attributed to this ad||
+|action_post|The number of posts attributed to this ad||
+|action_post_engagement|The engagements attributed to this ad for the targeted post||
+|action_post_reaction|The reactions attributed to this ad for the targeted post||
+|clicks|The number of times this ad was clicked||
+|engagements|The number of engagements that occurred due to this ad||
 |frequency|||
-|impressions|||
-|likes|||
+|impressions|The number of times this ad was seen by a user||
+|likes|The number of likes attributed to this ad||
 |reach|||
-|revenue|||
-|spend|||
+|revenue|The amount of money raised attributed to this Ad, by Facebook||
+|spend|The amount of money spent to display this ad||
 |total_actions|||
 |transactions|||
 |unique_clicks|||
