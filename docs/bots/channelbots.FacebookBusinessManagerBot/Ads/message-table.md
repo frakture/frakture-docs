@@ -34,7 +34,7 @@ Stats Fields
 |action_post_reaction|The reactions attributed to this ad for the targeted post||
 |clicks|The number of times this ad was clicked||
 |engagements|The number of engagements that occurred due to this ad||
-|frequency|||
+|frequency|The number of impressions that an ad received. Facebook defines impressions [here](https://www.facebook.com/business/help/675615482516035)||
 |impressions|The number of times this ad was seen by a user||
 |likes|The number of likes attributed to this ad||
 |reach|||
