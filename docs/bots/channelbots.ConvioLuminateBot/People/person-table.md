@@ -11,4 +11,5 @@
 |phone|Constituent's phone number|Phone|
 |postal_code|Constituent's postal code|Address - ZIP/Postal Code|
 |region|Constituent's state, province, or region (Luminate default is two-letter USPS abbreviations in North America, e.g. "CO")|Address - State/Province|
-|Title||Title|
+|street_1|||
+|street_2|||
