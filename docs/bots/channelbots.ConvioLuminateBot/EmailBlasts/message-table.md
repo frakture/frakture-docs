@@ -14,9 +14,27 @@ Stats Fields
 |---|---|---|
 |email_clicked||Click-Throughs|
 |email_delivered||Emails Delivered|
+|email_ecommerce_purchases||eCommerce Purchases|
+|email_ecommerce_purchase_amount||eCommerce Purchase Amount($)|
+|email_forwarded_actions||Forwarded Actions|
+|email_forwarded_click_count||Forwarded Click-Throughs|
+|email_forwarded_open_count||Forwarded Opens|
+|email_hard_bounces||Hard Bounces|
+|email_opened|Opens by the primary recipient pool|Recipient Opens|
+|email_open_count|Sum of primary and forwarded opens|Total Opens|
+|email_registrations||Registrations|
+|email_rsvps||RSVPs|
+|email_sent||Emails Sent aka Total Recipients|
+|email_soft_bounces||Soft Bounces|
+|email_spam_complaints||Spam Complaints|
+|email_surveys_taken||Surveys Taken|
+|email_teamraiser_registrations||Teamraiser Registrations|
+|email_tell_a_friend_forwards||TellAFriend Forwards|
+|email_tell_a_friend_forward_recipients||TellAFriend Forward Recipients|
+|email_ticket_purchases||Ticket Purchases|
 |email_total_clicks||Total Click-Throughs|
 |email_unsubscribes||Unsubscribes (Opt-Outs)|
 |impressions||Recipient Opens|
-|luminate_delivery_forwarded_opens||Forwarded Opens|
+|luminate_delivery_forwarded_opens|Opens by the non-recipients who received the email "secondhand" via a forward or re-post|Forwarded Opens|
 |luminate_delivery_recipient_opens||Recipient Opens|
 |luminate_delivery_soft_bounces||Soft Bounces|
