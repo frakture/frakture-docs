@@ -54,3 +54,4 @@ Stats Fields
 |luminate_delivery_total_recipients|||
 |luminate_delivery_total_recipients_forwarding_via_website||Total Recipients Forwarding via Website|
 |luminate_delivery_unsubscribes__opt_outs_||Unsubscribes (Opt-Outs)|
+|revenue||Donation Amount($)|
