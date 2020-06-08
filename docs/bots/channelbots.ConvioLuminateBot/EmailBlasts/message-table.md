@@ -12,8 +12,13 @@ Stats Fields
 
 |field|description|source|
 |---|---|---|
+|actions||Actions Taken|
+|email_actions_taken||Actions Taken|
+|email_advocacy_actions||Advocacy Actions|
 |email_clicked||Click-Throughs|
 |email_delivered||Emails Delivered|
+|email_donations||Donations|
+|email_donation_amount||Donation Amount($)|
 |email_ecommerce_purchases||eCommerce Purchases|
 |email_ecommerce_purchase_amount||eCommerce Purchase Amount($)|
 |email_forwarded_actions||Forwarded Actions|
@@ -35,6 +40,17 @@ Stats Fields
 |email_total_clicks||Total Click-Throughs|
 |email_unsubscribes||Unsubscribes (Opt-Outs)|
 |impressions||Recipient Opens|
+|luminate_delivery_forwarded_actions||Forwarded Actions|
+|luminate_delivery_forwarded_click_throughs||Forwarded Click-Throughs|
 |luminate_delivery_forwarded_opens|Opens by the non-recipients who received the email "secondhand" via a forward or re-post|Forwarded Opens|
+|luminate_delivery_hard_bounces||Hard Bounces|
+|luminate_delivery_recipient_actions||Recipient Actions|
+|luminate_delivery_recipient_click_throughs||Recipient Click-Throughs|
 |luminate_delivery_recipient_opens||Recipient Opens|
 |luminate_delivery_soft_bounces||Soft Bounces|
+|luminate_delivery_total_click_throughs||Total Click-Throughs|
+|luminate_delivery_total_messages_forwarded_via_website||Total Messages Forwarded via Website|
+|luminate_delivery_total_opens||Total Opens|
+|luminate_delivery_total_recipients|||
+|luminate_delivery_total_recipients_forwarding_via_website||Total Recipients Forwarding via Website|
+|luminate_delivery_unsubscribes__opt_outs_||Unsubscribes (Opt-Outs)|
