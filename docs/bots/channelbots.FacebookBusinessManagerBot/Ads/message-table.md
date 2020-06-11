@@ -1,11 +1,20 @@
 |field|description|source|
 |---|---|---|
+|adset_budget_type|"Lifetime" if lifetime budget non-null, "Daily" if daily budget non-null.||
+|adset_daily_budget|||
+|adset_end_date|||
 |adset_id|FB Adset ID||
+|adset_lifetime_budget|||
 |adset_name|FB Adset Name||
 |ad_type|||
 |bot_id|ID of the Bot pulling this Ad||
+|campaign_budget_type|"Lifetime" if lifetime budget non-null, "Daily" if daily budget non-null.||
+|campaign_daily_budget|||
 |campaign_id|FB Campaign ID||
+|campaign_lifetime_budget|||
 |campaign_name|FB Campaign Name||
+|campaign_start_date|||
+|campaign_status|||
 |campaign_type|||
 |edit_url|Link to Ad definition in Business Manager||
 |fb_preview_feed_link|||
