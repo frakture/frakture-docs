@@ -5,6 +5,11 @@
 [message-description](./EmailBlasts/message-description.md ':include')
 
 [message-fields](./EmailBlasts/message-table.md ':include')
+# MarketingAutomation
+
+[message-description](./MarketingAutomation/message-description.md ':include')
+
+[message-fields](./MarketingAutomation/message-table.md ':include')
 # Pages
 
 [message-description](./Pages/message-description.md ':include')
