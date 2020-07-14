@@ -6,6 +6,8 @@
 |adset_id|FB Adset ID||
 |adset_lifetime_budget|||
 |adset_name|FB Adset Name||
+|adset_start_date|||
+|adset_status|||
 |ad_type|||
 |bot_id|ID of the Bot pulling this Ad||
 |campaign_budget_type|"Lifetime" if lifetime budget non-null, "Daily" if daily budget non-null.||
