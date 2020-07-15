@@ -29,6 +29,7 @@
 |primary_source_code|Primary Source Code, pulled from Ad contents||
 |publish_date|First date this Ad was run on FB||
 |remote_id|FB Ad ID||
+|remote_objective|The objective - used by Facebook to determine the Results field||
 |status|||
 |subject|||
 |text_content|Text content of FB Ad||
