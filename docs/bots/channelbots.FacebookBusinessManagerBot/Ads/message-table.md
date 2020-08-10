@@ -38,16 +38,23 @@ Stats Fields
 
 |field|description|source|
 |---|---|---|
+|action_checkin|Page check-ins attributed to this Ad||
 |action_comment|The number of comments attributed to this ad||
 |action_lead|The number of leads attributed to this ad||
 |action_like|The number of likes attributed to this ad||
+|action_link_click|||
+|action_page_engagement|||
+|action_photo_view|The number of photo views attributed to this ad||
 |action_post|The number of posts attributed to this ad||
 |action_post_engagement|The engagements attributed to this ad for the targeted post||
 |action_post_reaction|The reactions attributed to this ad for the targeted post||
+|action_purchase|||
 |clicks|The number of times this ad was clicked||
 |engagements|The number of engagements that occurred due to this ad||
 |frequency|The number of impressions that an ad received. Facebook defines impressions [here](https://www.facebook.com/business/help/675615482516035)||
 |impressions|The number of times this ad was seen by a user||
+|inline_link_clicks|||
+|inline_post_engagement|||
 |likes|The number of likes attributed to this ad||
 |reach|||
 |revenue|The amount of money raised attributed to this Ad, by Facebook||
