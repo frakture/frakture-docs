@@ -43,6 +43,8 @@ Stats Fields
 |action_lead|The number of leads attributed to this ad||
 |action_like|The number of likes attributed to this ad||
 |action_link_click|||
+|action_onsite_conversion.post_save|||
+|action_onsite_conversion.purchase|||
 |action_page_engagement|||
 |action_photo_view|The number of photo views attributed to this ad||
 |action_post|The number of posts attributed to this ad||
