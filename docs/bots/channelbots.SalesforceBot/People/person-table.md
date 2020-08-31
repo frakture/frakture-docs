@@ -1,6 +1,6 @@
 |field|description|source|
 |---|---|---|
-|email_opt_in|||
+|email_opt_in||HasOptedOutOfEmail|
 |mobile_phone_opt_in|||
-|source_code|||
-|street_2|||
+|street_1|The first line of MailingStreet|MailingStreet|
+|street_2|The second line of MailingStreet|MailingStreet|

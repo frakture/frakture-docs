@@ -1,1 +1,5 @@
-No fields documented
+|field|description|source|
+|---|---|---|
+|city|||
+|country|||
+|phone|||
