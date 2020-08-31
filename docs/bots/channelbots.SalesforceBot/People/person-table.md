@@ -7,7 +7,7 @@
 |email_opt_in||HasOptedOutOfEmail|
 |family_name||LastName|
 |given_name||FirstName|
-|mobile_phone_opt_in|||
+|mobile_phone_opt_in|Must be specified by user|Must be specified by user|
 |phone||Phone|
 |postal_code||MailingPostalCode|
 |region||MailingState|
