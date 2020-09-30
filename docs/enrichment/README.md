@@ -1,7 +1,7 @@
 # Data Enrichment
 After pulling and standardizing data, Frakture adds value to that data through our enrichment processing.
 
-## [Conversion methods](enrichment/conversions "Conversion overview")
+## [Conversion methods](enrichment/attribution/conversions "Conversion overview")
 There are many ways to track conversions, here we discuss a few, and why we at Frakture heavily lean on source code based attribution.
 
 ## [Attribution](enrichment/attribution/ "Attribution")

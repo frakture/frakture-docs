@@ -13,7 +13,7 @@ A Standard API allows retrieval of people, messaging, and transaction data with 
 Full APIs allow querying of every element of data in the system, with high enough limits for heavy use.  Direct SQL access, or bulk APIs (such as the Salesforce Bulk API) fall under this category.  Even with a Full API, some systems do not track every interaction, so there is still some limits depending on the platform.  As a rule, though, try to ensure that any platform you choose has Full Bulk API access -- it's your data, you should be able to get to it.
 
 ## Definitions - Source Coding
-Much of the value of reports comes down to how well the data has been coded coming in.  While you can derive some insights from untreated data, you can develop much better insights when you source code your data.  See [Conversion methods](enrichment/conversions "Conversion overview") for more information on source coding.
+Much of the value of reports comes down to how well the data has been coded coming in.  While you can derive some insights from untreated data, you can develop much better insights when you source code your data.  See [Conversion methods](enrichment/attribution/conversions "Conversion overview") for more information on source coding.
 
 ### No source coding
 Very limited coding has been done in signup or transaction links.  Reporting tends to be limited to aggregate numbers, and is difficult to break out by source channel, or source campaign.  Origin performance -- performance about the first interaction of a person -- is basically nonexistent.
