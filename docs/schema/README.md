@@ -119,7 +119,10 @@ The standard fields collected for monetary transactions are:
 | remote_transaction_id | The unique identifier for this transaction in the source system |
 | ts | The timestamp when this transaction was processed, as reported by the source system |
 | amount | The amount of money reported by the source system |
+| recurs | String defining the frequency of the transaction - `null`, "weekly", "monthly", and "annually" currently supported |
+| recurring_number | Integer representing the number of transactions that have been made in this sequence. `null` if not recurring, 1 if first gift. Not supported by all systems, and some may show 2 for all subsequent gifts |
 | source_code* | An identifier from the source system that identifies how a transaction entered the system |
+
 
  * Systems have different ways of representing source code information, and occasionally this is spread across multiple fields.
 
