@@ -1,6 +1,6 @@
 * [Home](/)
 
-* Level 1 - Automate your world
+* Level 1 - Automate your world...
 
 * Level 2 - Dive deeper and modernize
 	* [Enrichment](enrichment/ "Data enrichment")
@@ -12,17 +12,17 @@
 
 * Level 3 - Strategic Reporting, Acquisitions, Lifetime ROI
 
-
 * Some useful topics
 
 	* [Conversion Methods](enrichment/attribution/conversions "Conversion overview")
 	* [Transaction Refunds](enrichment/refunds "Refunds")
 
+* Appendix
 
-	* [Delivery](delivery/ "Delivery Options")
-		* [Warehouse](delivery/warehouse/ "Warehouse")
-		* [Reports](delivery/reports/ "Reports")
+* [Delivery](delivery/ "Delivery Options")
+* [Warehouse](delivery/warehouse/ "Warehouse")
+* [Reports](delivery/reports/ "Reports")
 
-	* [Technical Details](etl/ "Extract, Transform, Load")
-		* [Standard Schema](schema/ "Warehouse Object Schema")
-		* [Platform/Bot Details](etl/bots/ "Platform/Bot Details")
+* [Technical Details](etl/ "Extract, Transform, Load")
+* [Standard Schema](schema/ "Warehouse Object Schema")
+* [Platform/Bot Details](etl/bots/ "Platform/Bot Details")
