@@ -1,7 +1,7 @@
 * [Home](/)
 
 * Level 1 - Automate your world...
-  * [Level 1 introduction](Level 1 introduction/)
+  * [Level 1 introduction](level1/level1_intro)
 
 * Level 2 - Dive deeper and modernize
 	* [Enrichment](enrichment/ "Data enrichment")
