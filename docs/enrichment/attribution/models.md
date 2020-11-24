@@ -4,7 +4,7 @@ Attribution is all about the process of assigning 'credit' for your conversions 
 
 How to assign credit for transactions and other conversions is not a trivial matter.  In fact it's one that has widely varying strategies, and no 'right' answer.
 
-Attribution in Frakture is heavily tied to conversion source coding -- the process of assigning a source code to transactions and individuals.  In order to start assigning credit to different channels, you do need to have quality data gathered about conversions.  Bad data in means bad data out.  See [Conversion Methods](enrichment/conversions "Conversion overview") for more info about how to ensure you're gathering quality conversion data, PRIOR to figuring out how you assign credit about those conversions.
+Attribution in Frakture is heavily tied to conversion source coding -- the process of assigning a source code to transactions and individuals.  In order to start assigning credit to different channels, you do need to have quality data gathered about conversions.  Bad data in means bad data out.  See [Conversion Methods](enrichment/attribution/conversions "Conversion overview") for more info about how to ensure you're gathering quality conversion data, PRIOR to figuring out how you assign credit about those conversions.
 
 The online ad world uses fairly consistent terminology around attribution, and has heavily informed Frakture attribution modeling.  The main difference is that online ad models have insight into opens and clicks on a *specific* platform, whereas Frakture mostly tracks data across platforms, including offline data, which tends to consist of good conversion source coding information.  It is not unusual to use both to gather insight into your communications.
 

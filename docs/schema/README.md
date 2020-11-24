@@ -3,12 +3,67 @@
 A Frakture Warehouse holds many types of objects that have been mapped from various source systems into a normalized schema.
 The most common object types in a Frakture Warehouse are:
 
-- **Messages**: Emails, Ads, Surveys... Any form of data that presents information to a person, and their statistics 
+- **Messages**: Emails, Ads, Surveys... Any form of data that presents information to a person, and their statistics
 - **Transactions**: Donations, Gifts, Pledges... Any form of data that represents a monetary transfer
 - **People**: Constituents, Volunteers, Donors... Any form of data that represents a single person
 
-Each type has a specific set of *Standard* fields that will be found on the primary tables for that type.
-The standard fields/tables can be found below:
+
+Frakture classifies it's data into multiple "Levels", where each successive level adds in and extends the raw data.
+
+
+## Level 1 - Straight Extract Transform Load
+Level 1 tables store information directly after translating from the source system.  Level 1 data is stored with the table format:
+
+`<platform>_<bot_id>_<data_type>`
+
+where the `platform` is a prefix for the platform (e.g. googleads, facebook, luminate, etc), the `bot_id` is a random unique identifier for a specific login for that platform (e.g. kce, xfp), and the data_type depends on the type of data.
+
+### Messaging data and summary views
+
+#### Tables
+`<platform>_<bot_id>_message`,`<platform>_<bot_id>_stats`,`<platform>_<bot_id>_stats_by_date`:
+	Emails, Ads, Surveys... Any form of messaging has their raw data in the message and stats tables.
+
+#### Views
+`<platform>_<bot_id>_<channel>_summary`,`<platform>_<bot_id>_<channel>_summary_by_date`:
+	Each channel (email,ad, etc) also has a summary view, that joins in the stats tables into more convenient layouts for reporting.  There may be more than one channel per bot (signup pages, donation pages, emails, etc), the summary views display the most useful statistics for each channel.
+
+### People Data
+`<platform>_<bot_id>_person`: One record per person in the source system.  Data is mapped into a common schema, with the remote_person_id as the unique key
+
+### Transaction Data
+`<platform>_<bot_id>_transaction`: One record per *monetary* transaction in the source system (if available).  This does NOT include other types of transactions (form submissions, clicks, etc), which are considered level 5 data.  
+
+## Level 2 - Transaction Attribution
+
+Attribution is the process of assigning a transaction to a particular outbound message.  It is a global process, as many organizations use multiple messaging and payment platforms, and primarily leverages source codes to identify the source message.  As such, there is only one instance of these tables for any group.
+
+### Tables
+`message_source_code` - Stores one entry for every source code and message.  Can store multiple source codes per message.
+`attribution` -- The attribution table contains one entry per attributed transaction.  A transaction is attributed when it is uniquely paired up with a source message, using Frakture's attribution algorithm.
+`transaction_metadata` - Global tables that store additional metadata about transactions, including overrides, origin sourcing, etc.
+
+### Summary views
+`transaction_summary` - Global view that includes information from the source code dictionary
+
+
+## Level 3 - Source Code parsing and Global Stats
+Level 3 is all about source code management and parsing.  For most advanced users, source codes are the core to quality cross-channel reporting.  Frakture aggregates the source codes, then attempts to auto-parse them into elements designed for reporting.
+
+`source_code_dictionary` - A full list of all source codes from your organization, whether it be from messages, transactions, or people.  Also contains information on auto-parsing, such as the format that matched, and the resulting extracted elements (like source_code_channel, agency, audience, etc).  Elements also have corresponding _label fields that are suitable for humans.
+
+`source_code_dictionary_override` - Contains human provided overrides for source codes.  Bots don't put data into this table, but do consume it for building reports.
+
+`global_message_stats` -
+
+
+
+
+
+
+
+
+
 
 ## Messages
 
@@ -64,7 +119,10 @@ The standard fields collected for monetary transactions are:
 | remote_transaction_id | The unique identifier for this transaction in the source system |
 | ts | The timestamp when this transaction was processed, as reported by the source system |
 | amount | The amount of money reported by the source system |
+| recurs | String defining the frequency of the transaction - `null`, "weekly", "monthly", and "annually" currently supported |
+| recurring_number | Integer representing the number of transactions that have been made in this sequence. `null` if not recurring, 1 if first gift. Not supported by all systems, and some may show 2 for all subsequent gifts |
 | source_code* | An identifier from the source system that identifies how a transaction entered the system |
+
 
  * Systems have different ways of representing source code information, and occasionally this is spread across multiple fields.
 
@@ -91,7 +149,7 @@ Person records within a given system can be found in `<table_prefix>person`. The
 
 ## Advocacy Actions
 
-For systems that support it, advocacy actions can be loaded into the warehouse on a per-person per-action basis - each action that a person takes is stored as an individual record in the `<table_prefix>advocacy_action` table. 
+For systems that support it, advocacy actions can be loaded into the warehouse on a per-person per-action basis - each action that a person takes is stored as an individual record in the `<table_prefix>advocacy_action` table.
 
 | Field | Description |
 | --- | --- |
