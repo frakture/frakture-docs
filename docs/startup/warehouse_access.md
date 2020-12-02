@@ -20,4 +20,4 @@ Once you have a user set up, we'll need this information.
 
 Please do not send this sensitive login information in plaintext; we recommend using a service such as [One Time Secret](https://onetimesecret.com) or [Saltify](https://saltify.io) to generate a secure, password-protected link and share that with your Frakture contact. Be sure to whitelist the Frakture bots' IP address (54.83.193.14) in any firewalls that govern access to the database in question.
 
-For deeper detail on self-hosting, see [here](delivery/warehouse/) or reach out to us at _support (at) frakture.com_.
+For deeper detail on self-hosting, see [here](delivery/warehouse/ "Warehouse") or reach out to us at _support (at) frakture.com_.

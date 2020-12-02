@@ -2,7 +2,7 @@
 
 Frakture's fleet of bots automates handling of your digital data, simultaneously freeing up your staff's time and expanding your analytical capacity so that your whole team can do a lot more with a lot less sweat.
 
-The Frakture product deploys in escalating levels, all comprising mutually complementary features that operate out of a [data warehouse](delivery/warehouse) where all your various systems' outputs can be combined and coordinated. (We'll use your warehouse if you've got one already, or we'll deploy a warehouse for you if you don't.)
+The Frakture product deploys in escalating levels, all comprising mutually complementary features that operate out of a [data warehouse](delivery/warehouse/ "Warehouse") where all your various systems' outputs can be combined and coordinated. (We'll use your warehouse if you've got one already, or we'll deploy a warehouse for you if you don't.)
 
 * **Level 1**
 [Level 1](level1/level1_intro) gets you started with the benefits of data automation and standardization, with daily refreshes of your organization's lifeblood data. You can think of it as immediate tactical support: let bots take over the tedious spadework of refreshing data reports.

@@ -4,7 +4,7 @@ Frakture's Level 1 get you started with the benefits of data automation and stan
 
 Specifically, Level 1 comprises two related features:
 
-* **Scheduled loading of data** from source systems (including dozens of CRMs, message platforms, social media, and more) into your [warehouse](delivery/warehouse) where it's right at your fingertips. For each system, Frakture's bots will load any or all of
+* **Scheduled loading of data** from source systems (including dozens of CRMs, message platforms, social media, and more) into your [warehouse](delivery/warehouse/ "Warehouse") where it's right at your fingertips. For each system, Frakture's bots will load any or all of
   * *People* (constituents, members, donors, or supporters on your list)
   * *Transactions* (financial gifts and payments)
   * *Messages* (Frakture's catch-all term for the emails, ads, and social media posts you send, each with all their platform-specific performance metrics)
