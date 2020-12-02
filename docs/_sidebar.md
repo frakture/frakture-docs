@@ -1,9 +1,9 @@
 * [Home](/)
 
-* [Overview] (/overview)
-* [Getting Started] (/startup/general)
-  * System access (/startup/system_access)
-  * Warehouse access (/startup/warehouse_access)
+* [Overview](overview)
+* [Getting Started](startup/general)
+  * [System access](startup/system_access)
+  * [Warehouse access](startup/warehouse_access)
 
 * Level 1 - Automate your world...
   * [Level 1 introduction](level1/level1_intro)

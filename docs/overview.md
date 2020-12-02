@@ -1,12 +1,16 @@
-# Frakture's Level 1 Services
+# Overview
 
-Frakture's Level 1 get you started with the benefits of data automation and standardization, with daily refreshes of your organization's lifeblood data. You can think of it as immediate tactical support: let bots take over the tedious spadework of refreshing data reports. You and your staff have better things to do!
+Frakture's fleet of bots automates handling of your digital data, simultaneously freeing up your staff's time and expanding your analytical capacity so that your whole team can do a lot more with a lot less sweat.
 
-Specifically, Level 1 comprises two related features:
+The Frakture product deploys in escalating levels, all comprising mutually complementary features that operate out of a [data warehouse](delivery/warehouse) where all your various systems' outputs can be combined and coordinated. (We'll use your warehouse if you've got one already, or we'll deploy a warehouse for you if you don't.)
 
-* **Scheduled loading of data** from source systems (including dozens of CRMs, message platforms, social media, and more) into your warehouse where it's right at your fingertips. For each system, Frakture's bots will load any or all of
-  * *People* (constituents, members, donors, or supporters on your list)
-  * *Transactions* (financial gifts and payments)
-  * *Messages* (Frakture's catch-all term for the emails, ads, and social media posts you send, each with all their platform-specific performance metrics)
+* **Level 1**
+[Level 1](level1/level1_intro) gets you started with the benefits of data automation and standardization, with daily refreshes of your organization's lifeblood data. You can think of it as immediate tactical support: let bots take over the tedious spadework of refreshing data reports.
 
-* **Standardization of that data** into Frakture's modular, machinable data formats so that it's easily reported and compared across all your channels.
+* **Level 2**
+At Level 2 the bots go to work automating analysis on the data they load into the warehouse. You'll get deeper dive reporting into campaigns and content, like omnichannel source code-based attribution connecting your transactions (on all platforms) to your ads, emails, and other messaging (on all platforms)
+
+* **Level 3**
+Level 3 brings strategic reporting to guide executives with long-term decisions, like lifetime donor value.
+
+Ready to level up your digital game? The best part of all is that it's surprisingly easy to [get started](startup/general).
