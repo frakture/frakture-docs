@@ -9,4 +9,4 @@ Specifically, Level 1 comprises two related features:
   * *Transactions* (financial gifts and payments)
   * *Messages* (Frakture's catch-all term for the emails, ads, and social media posts you send, each with all their platform-specific performance metrics)
 
-* **Standardization of that data** into Frakture's machinable data formats so it's easily reported and compared across all your channels.
+* **Standardization of that data** into Frakture's modular, machinable data formats so that it's easily reported and compared across all your channels.
