@@ -2,14 +2,13 @@
 
 * [Overview](overview)
 * [Getting Started](startup/general)
-  * [System access](startup/system_access)
   * [Warehouse access](startup/warehouse_access)
 
 * Level 1 - Automate your world...
   * [Level 1 introduction](level1/level1_intro)
-  * [Getting Started: ]
 
 * Level 2 - Dive deeper and modernize
+  * [Level 2 introduction](level2/level2_intro)
 	* [Enrichment](enrichment/ "Data enrichment")
 	* [Attribution vs Source Code reporting](enrichment/attribution/reporting_split "Attribution vs Source Code")
 	* [Attribution Design - Constraints](enrichment/attribution/constrained "Attribution Design - Constraints")
