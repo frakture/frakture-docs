@@ -7,6 +7,7 @@
 * Level 1 - Automate your world...
   * [Level 1 introduction](level1/level1_intro)
   * [Level 1 data](level1/level1_schema)
+  	* [Transaction Refunds](enrichment/refunds "Refunds")
   * [Level 1 reports](level1/level1_reports)
     * [Connecting to external reporting platforms](level1/level1_reports_external)
 
@@ -24,7 +25,6 @@
 * Some useful topics
 
 	* [Conversion Methods](enrichment/attribution/conversions "Conversion overview")
-	* [Transaction Refunds](enrichment/refunds "Refunds")
 
 * Appendix
 
