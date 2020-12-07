@@ -6,6 +6,9 @@
 
 * Level 1 - Automate your world...
   * [Level 1 introduction](level1/level1_intro)
+  * [Level 1 data](level1/level1_schema)
+  * [Level 1 reports](level1/level1_reports)
+    * [Connecting to external reporting platforms](level1/level1_reports_external)
 
 * Level 2 - Dive deeper and modernize
   * [Level 2 introduction](level2/level2_intro)
