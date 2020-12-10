@@ -4,4 +4,4 @@ The Frakture console provides a large and growing number of [reports](reports/re
 
 ## Level One Reports
 
-![Sample Report: Email Fundraising](report_sample_email_fundraising)
+![Sample Report: Email Fundraising](report_sample_email_fundraising.png)
