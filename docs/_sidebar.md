@@ -8,8 +8,6 @@
   * [Level 1 introduction](level1/level1_intro)
   * [Standard Data Schema](schema/ "Warehouse Object Schema")
   	* [Transaction Refunds](enrichment/refunds "Refunds")
-  * [Level 1 reports](level1/level1_reports)
-    * [Connecting to external reporting platforms](level1/level1_reports_external)
 
 * Level 2 - Dive deeper and modernize
   * [Level 2 introduction](level2/level2_intro)
@@ -21,6 +19,11 @@
 	* [Source Code Pipeline](enrichment/pipeline "Source Code Pipeline")
 
 * Level 3 - Strategic Reporting, Acquisitions, Lifetime ROI
+
+* [Reports](reports/reports_intro)
+  * [Frakture Reports](reports/reports_frakture)
+  * [Stock Frakture Data Studio reports](reports/reports_gds)
+  * [Connecting to external reporting platforms](reports/reports_external)
 
 * Some useful topics
 
