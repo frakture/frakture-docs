@@ -10,9 +10,12 @@ The most common object types in a Frakture Warehouse are:
 
 Frakture classifies it's data into multiple "Levels", where each successive level adds in and extends the raw data.
 
+MOST users will want to use the `summary` tables, which are views that incorporate data from multiple useful core data tables.  These summaries are optimized for use by third party reporting suites, as well as Frakture native reporting.
 
-## Level 1 - Straight Extract Transform Load
-Level 1 tables store information directly after translating from the source system.  Level 1 data is stored with the table format:
+
+
+## Level 1 - Extract Transform Load
+Level 1 tables store information directly after downloading and translating from the source system.  Level 1 data is stored with the table format:
 
 `<platform>_<bot_id>_<data_type>`
 
@@ -34,7 +37,7 @@ where the `platform` is a prefix for the platform (e.g. googleads, facebook, lum
 ### Transaction Data
 `<platform>_<bot_id>_transaction`: One record per *monetary* transaction in the source system (if available).  This does NOT include other types of transactions (form submissions, clicks, etc), which are considered level 5 data.  
 
-## Level 2 - Transaction Attribution
+## Level 1A - Transaction Attribution
 
 Attribution is the process of assigning a transaction to a particular outbound message.  It is a global process, as many organizations use multiple messaging and payment platforms, and primarily leverages source codes to identify the source message.  As such, there is only one instance of these tables for any group.
 
@@ -43,24 +46,25 @@ Attribution is the process of assigning a transaction to a particular outbound m
 `attribution` -- The attribution table contains one entry per attributed transaction.  A transaction is attributed when it is uniquely paired up with a source message, using Frakture's attribution algorithm.
 `transaction_metadata` - Global tables that store additional metadata about transactions, including overrides, origin sourcing, etc.
 
-### Summary views
+### Summary Views
 `transaction_summary` - Global view that includes information from the source code dictionary
 
 
-## Level 3 - Source Code parsing and Global Stats
-Level 3 is all about source code management and parsing.  For most advanced users, source codes are the core to quality cross-channel reporting.  Frakture aggregates the source codes, then attempts to auto-parse them into elements designed for reporting.
+## Level 2 - Source Code parsing and Global Stats
+Level 2 is all about source code management and parsing.  For most advanced users, source codes are the core to quality cross-channel reporting.  Frakture aggregates the source codes, then attempts to auto-parse them into elements designed for reporting.
 
 `source_code_dictionary` - A full list of all source codes from your organization, whether it be from messages, transactions, or people.  Also contains information on auto-parsing, such as the format that matched, and the resulting extracted elements (like source_code_channel, agency, audience, etc).  Elements also have corresponding _label fields that are suitable for humans.
 
 `source_code_dictionary_override` - Contains human provided overrides for source codes.  Bots don't put data into this table, but do consume it for building reports.
 
-`global_message_stats` -
+`source_code_stats` - Statistics grouped by source code
+`source_code_stats_by_date` - Statistics grouped by source code and by date
 
+### Summary Views
+Summary views are the most commonly used views to report on.  They include data from the source code dictionary, including labels and other metadata, as well as statistics gathered from all components of Frakture.
 
-
-
-
-
+`source_code_summary` - Statistics grouped by source code, with additional dictionary definitions joined in.
+`source_code_summary_by_date` - Statistics grouped by Source code and date, with additional dictionary definition fields joined in
 
 
 
