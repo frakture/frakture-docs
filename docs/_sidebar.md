@@ -8,15 +8,15 @@
   * [Level 1 introduction](level1/level1_intro)
   * [Standard Data Schema](schema/ "Warehouse Object Schema")
   	* [Transaction Refunds](enrichment/refunds "Refunds")
+  * [Source Code Data Enrichment](enrichment/ "Data enrichment")
+  	* [Source Code Pipeline](enrichment/pipeline "Source Code Pipeline")
+    * [Attribution vs Source Code reporting](enrichment/attribution/reporting_split "Attribution vs Source Code")
+    * [Attribution Design - Constraints](enrichment/attribution/constrained "Attribution Design - Constraints")
+    * [Credit Models](enrichment/attribution/models "Credit Models")
 
 * Level 2 - Dive deeper and modernize
   * [Level 2 introduction](level2/level2_intro)
-	* [Enrichment](enrichment/ "Data enrichment")
-	* [Attribution vs Source Code reporting](enrichment/attribution/reporting_split "Attribution vs Source Code")
-	* [Attribution Design - Constraints](enrichment/attribution/constrained "Attribution Design - Constraints")
-	* [Credit Models](enrichment/attribution/models "Credit Models")
-	* [Standard Source Code Elements](enrichment/source_code_elements "Source Code ")
-	* [Source Code Pipeline](enrichment/pipeline "Source Code Pipeline")
+    	* [Standard Source Code Elements](enrichment/source_code_elements "Source Code ")
 
 * Level 3 - Strategic Reporting, Acquisitions, Lifetime ROI
 
