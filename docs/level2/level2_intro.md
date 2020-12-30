@@ -1,14 +1,7 @@
-# Frakture's Level 1 Services
+# Frakture's Level 2 Services
 
-Frakture's Level 1 get you started with the benefits of data automation and standardization, with daily refreshes of your organization's lifeblood data. You can think of it as immediate tactical support: let bots take over the tedious spadework of refreshing data reports. You and your staff have better things to do!
+Frakture's Level 2 unfurls director-level views of your organization's performance by enriching your source code data with campaign-level analytics.
 
-Specifically, Level 1 comprises two related features:
+Starting from the *source code dictionary* Frakture compiles from your [Level One](level1/level1_intro) automations, bots and humans combine to mark up your coding ecosystem with with information about those source codes' campaigns, channels, content blocs, audience targets, and other key analytical dimensions.
 
-* **Scheduled loading of data** from source systems (including dozens of CRMs, message platforms, social media, and more) into your [warehouse](delivery/warehouse/ "Warehouse") where it's right at your fingertips. For each system, Frakture's bots will load any or all of
-  * *People* (constituents, members, donors, or supporters on your list)
-  * *Transactions* (financial gifts and payments)
-  * *Messages* (Frakture's catch-all term for the emails, ads, and social media posts you send, each with all their platform-specific performance metrics)
-
-* **Standardization of that data** into Frakture's modular, machinable data formats so that it's easily reported and compared across all your channels.
-
-* **Source code-driven attribution** linking transactions to messages, across all channels and platforms.
+If you've used rigorous source code syntax, that's great: we'll teach the bots to speak your own coding language and take all the work off your plate. If your digital team tends to code differently from your mail team, the bots are happily multilingual. And even if your coding has been entirely ad hoc, the source code dictionary is a snap with manual overrides, enabling human hands to speedily straighten out even the most unruly tangle of data.
