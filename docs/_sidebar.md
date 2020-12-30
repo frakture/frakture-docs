@@ -16,7 +16,7 @@
 
 * Level 2 - Dive deeper and modernize
   * [Level 2 introduction](level2/level2_intro)
-    	* [Standard Source Code Elements](enrichment/source_code_elements "Source Code")
+  	* [Standard Source Code Elements](enrichment/source_code_elements "Source Code")
 
 * Level 3 - Strategic Reporting, Acquisitions, Lifetime ROI
 
