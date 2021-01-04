@@ -16,8 +16,8 @@
 
 * Level 2 - Dive deeper and modernize
   * [Level 2 introduction](level2/level2_intro)
-    * [The Source Code Dictionary](enrichment/source_code_dictionary "Source Code Elements")
-    * [Source Code Elements](enrichment/source_code_elements "Source Code")
+  * [The Source Code Dictionary](enrichment/source_code_dictionary "Source Code Dictonary")
+    * [Source Code Elements](enrichment/source_code_elements "Source Code Elements")
 
 * Level 3 - Strategic Reporting, Acquisitions, Lifetime ROI
 
