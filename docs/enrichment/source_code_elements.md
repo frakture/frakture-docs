@@ -1,8 +1,10 @@
-# Frakture Standard Source code metadata
+# Frakture Source Code metadata
 
-Each source code can encode a great deal of additional information about the solicitation that carried it: to whom was the solicitation targeted, for what purpose was it sent. Frakture provides standard names for common elements that might further describe a source code; our [Level 2](level2/level2_intro) service provides the ability to automate recognition of elements declared by your organization's source code syntax(es) with human visibility and manual overrides.
+Each source code in the [Source Code Dictionary](enrichment/source_code_dictionary) can encode a great deal of additional information about the solicitation that carried it: to whom was the solicitation targeted, for what purpose was it sent. Frakture provides standard names for common elements that might further describe a source code; our [Level 2](level2/level2_intro) service provides the ability to automate recognition of elements declared by your organization's source code syntax(es) with human visibility and manual overrides.
 
-Apart from the date all source metadata is open-ended text that you're free to use according to your own taxonomies. Suggested entries below are merely that -- suggestions: unless specifically noted there is no menu of preferred or expected choices that are needed to optimize other components of the Frakture infrastructure. If you're best served not by terms like "Holiday Fundraiser" but by shorthand abbreviations or numerical keys, use whatever suits you. The most important thing is to be consistent with these terms across different codes, because reports will break out counts and sums along the axes defined here.
+The most commonly used are described in the [Source Code Dictionary documentation page](enrichment/source_code_dictionary), but many additional fields are also available and might be used by your organization. They're detailed in full below.
+
+Apart from the date all source metadata is open-ended text that you're free to use according to your own taxonomies. Suggested entries below are merely that -- suggestions: unless specifically noted there is no menu of preferred or expected nomenclature required to optimize other components of the Frakture infrastructure. If you're best served not by terms like "Holiday Fundraiser" but by shorthand abbreviations or numerical keys, use whatever suits you. The most important thing is to be consistent with these terms across different codes, because reports will break out counts and sums along the axes defined here.
 
 ### Account (account_prefix)
 
@@ -103,10 +105,6 @@ For use if the message is targeted to a specific locale, a common parameter for 
 ### Organic/Paid (organic)
 
 Organic or paid message.
-
-### Recurring Campaign Type (recurtype)
-
-Whether this is a recurring campaign effort.
 
 ### Additional (additional_info)
 
