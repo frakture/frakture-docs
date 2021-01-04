@@ -28,7 +28,7 @@ If you use email and transaction pages from the same integrated CRM, Initial Rev
 
 Revenue is a (potentially) larger sum that expands the Initial Revenue concept to add all the _subsequent installments_ of recurring gifts that trace directly to a particular source code. For newly-deployed source codes, it's likely to be the same as Initial Revenue -- but over time, the Revenue figure can pile up as a code receives credit for long-running pledges.
 
-Suppose as the result of an email appeal five donors each give a $10 gift, and a sixth kicks off a $6 monthly pledge. The Initial Revenue will be $56 (5 * $10, plus the $6 initial recurring installment). Revenue will also show $56 ... at first. A month later, when the recurring donor's second $6 installment tolls, the Revenue figure will climb to $62 ($56 + the new $6), while the Initial Revenue figure will remain at $56. Should this recurring gift remain active for years, the Revenue figure eventually could mount to several times the Initial Revenue total.
+Suppose as the result of an email appeal five donors each give a $10 gift, and a sixth kicks off a $6 monthly pledge. The Initial Revenue will be $56 (5 * $10, plus the $6 initial recurring installment). Revenue will also show $56 ... at first. A month later, when the recurring donor's second $6 installment tolls, the Revenue figure will climb to $62 ($56, plus the new $6), while the Initial Revenue figure will remain at $56. Should this small recurring gift remain active for years, the Revenue figure eventually could mount to several times the Initial Revenue total.
 
 ### Origin People and Origin Revenue
 
