@@ -6,7 +6,11 @@ Frakture's Data Studio template has pre-fab report pages ready-made to connect w
 
 ![Sample Data Studio page: Email Performance](gds_sample_email_performance.png)
 
+-----
+
 ![Sample Data Studio page: Facebook Ads](gds_sample_facebook_ads.png)
+
+-----
 
 ![Sample Data Studio page: Performance By Channel](gds_sample_channel.png)
 
@@ -14,7 +18,7 @@ Frakture's Data Studio template has pre-fab report pages ready-made to connect w
 
 While Google Data Studio is convenient and free, you should be aware that it has some limitations. Frakture can't provide comprehensive support on Data Studio, but these are some of the most common issues we've seen:
 
-* To limit its bandwith footprint, Data Studio does not directly query live data tables, but rather caches that data. As a result, your data studio reports might lag behind updates to your warehouse data by several hours.
+* To limit its bandwith footprint, Data Studio does not directly query live data tables, but rather caches that data. As a result, outputs in your Data Studio reports might lag behind updates to your warehouse data by several hours.
 
 * Data Studio limits its cached data to 100,000 rows per object or table. When data sets exceed this figure, which can easily occur with the transaction history for medium to larger organizations, you'll experience unpredictable gaps in the reported data reflecting the fact that some rows have simply been excluded from Data Studio's cache. (Gaps in transaction history will also knock on to gaps in the sums attributed to messages.) Frakture itself _does_ have the complete data in the warehouse -- but Data Studio might not reflect it all.
 
