@@ -44,7 +44,7 @@ Self-explanatory, but [see here](enrichment/refunds) for more about how Frakture
 
 -----
 
-Besides the revenue numbers, there are several additional columns noting information that the source in question encodes. You can customize these parameters by selecting among [over 15 available variables](enrichment/source_code_elements) using the ![Columns](Columns_hamburger.png) hamburger menu in the upper right, but the most commonly used are these:
+Besides the revenue numbers, there are several additional columns noting information that the source in question encodes. You can customize these parameters by selecting among [over 20 available variables](enrichment/source_code_elements) using the ![Columns](Columns_hamburger.png) hamburger menu in the upper right, but the most commonly used are these:
 
 ### Channel (source_code_channel)
 
@@ -66,7 +66,7 @@ For use if the message is targeted to a specific locale, a common parameter for 
 
 ### Using Overrides
 
-Frakture's bots will attempt to render elements such as the above by parsing source codes according to the syntax you supply us. However, each of the non-revenue elements above might be paired with an optional "Override" column, which is a human-editable column -- it's editable right there in the console Source Code Dictionary page -- where you can correct the automated reading or supply missing elements.
+Frakture's bots will attempt to render elements such as the above by [parsing source codes](enrichment/source_code_parsing) according to the syntax you supply us. However, each of the non-revenue elements above might be paired with an optional "Override" column, which is a human-editable column -- it's editable right there in the console Source Code Dictionary page -- where you can correct the automated reading or supply missing elements.
 
 Just type the preferred value into the Override field, and the equivalent element field will update in real time. For example, if bots have misinterpreted your code's Goal as "Acquisition", you can type into the Goal Override field a corrected value such as "Fundraising" -- and you'll see the Goal change accordingly. (As will any downstream reports that make calculations with the Goal element.)
 

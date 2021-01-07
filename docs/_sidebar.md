@@ -18,6 +18,7 @@
   * [Level 2 introduction](level2/level2_intro)
   * [The Source Code Dictionary](enrichment/source_code_dictionary "Source Code Dictonary")
     * [Source Code Elements](enrichment/source_code_elements "Source Code Elements")
+    * [Source Code Parsing](enrichment/source_code_parsing "Source Code Parsing")
 
 * Level 3 - Strategic Reporting, Acquisitions, Lifetime ROI
 
