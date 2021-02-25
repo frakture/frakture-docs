@@ -29,7 +29,7 @@
 
 * Some useful topics
 
-	* [Segments & Cohorts](general/segments)
+	* [Segments & Cohorts](general/segments/)
 	* [Conversion Methods](enrichment/attribution/conversions "Conversion overview")
 
 * Appendix
