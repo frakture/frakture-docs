@@ -8,19 +8,26 @@ Access your Frakture reporting library through the "Reports" link atop your Frak
 
 ## Level One Reports
 
-Level 1 reports organize standard data about message performance, transactions, and supporters -- from all your channels, in a single convenient place.
+Level 1 reports organize standard data about message performance, transactions, and supporters -- from all your channels, in a single convenient place, and readily filtered by date.
 
-### Sample Report: Email Data
+### Sample Reports: Email Data
 ![Sample Report: Email Fundraising](report_sample_email_fundraising.png)
 
 ![Sample Report: Email Performance](report_sample_email_performance.png)
 
-### Sample Report: Transactions
+-----
+
+### Sample Reports: Transactions
 ![Sample Report: Transactions](report_sample_transactions.png)
+
+![Sample Report: Regional Fundraising](report_sample_transactions_regional.png)
+
+-----
 
 ### Sample Report: People
 ![Sample Report: People](report_sample_people.png)
 
+-----
 
 ## Level Two Reports
 
