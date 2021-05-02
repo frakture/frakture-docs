@@ -32,15 +32,17 @@ Here are a few common calculations you might want to consider.
 
 Frakture date fields (such as "ts" (timestamp) on transaction tables, or "publish_date" on message tables, or just "date" on various summary-by-date tabes) give a full _YYYY-MM-DD HH:MM:SS_ date.
 
-* WEEKDAY(ts), WEEKDAY(publish_date), or WEEKDAY(date) outputs the day of the week: useful if you're analyzing performance for Mondays as compared to Thursdays as compared to Saturdays. Zoom in even closer with HOUR() to see if you should be sending that email first thing in the morning or wait to lunchtime.
+* _WEEKDAY(ts)_, _WEEKDAY(publish_date)_, or _WEEKDAY(date)_ outputs the day of the week: useful if you're analyzing performance for Mondays as compared to Thursdays as compared to Saturdays. Zoom in even closer with _HOUR()_ to see if you should be sending that email first thing in the morning or wait to lunchtime.
 
-* Conversely, zoom back out with functions like MONTH(), QUARTER() or YEAR() to capture big-picture aggregates. WEEK() is an underrated star: it returns the number of the year's week that the date falls in, from 1 to 52, which is great for year-over-year performance comparison.
+* Conversely, zoom back out with functions like _MONTH()_, _QUARTER()_ or _YEAR()_ to capture big-picture aggregates. _WEEK()_ is an underrated star: it returns the number of the year's week that the date falls in, from 1 to 52, which is great for year-over-year performance comparison.
 
 ### Rate fields ###
 
+Frakture data objects serve a large number of integer or decimal fields that can be combined and manipulated via Google's many [functions](https://support.google.com/datastudio/table/6379764?hl=en). Most of the core performance rates you're likely to need will look like simple Excel formulas involving two or three of Frakture's numerical fields.
+
 * A very basic email open rate would simply be _email_opened/email_sent_. However ...
 
-* Rate stats can get squirrelly when they're combined into larger aggregations, such as the stats for the entire month of June or the stats for an entire email campaign. You don't want the large-scale total to be "the average of the averages", weighing small-scale email sends the same as large ones. Because of that, we'd recommend preferring _SUM(email_opened)/SUM(email_sent)_. In the context of a single email, this is the exact same calculation ... but when the field is involved in a chart aggregation, it'll give you the correctly weighted rate based on all clicks and all opens in the sample.
+* Rate stats can get squirrelly when they're combined into larger aggregations, such as the stats for the entire month of June or the stats for an entire email campaign. You don't want the large-scale total to be "the average of the averages", weighing small-scale email sends the same as large ones. Because of that, we'd recommend preferring _SUM(email_opened)/SUM(email_sent)_ as your open rate definition. In the context of a single email, this is the exact same calculation ... but when the field is involved in a chart aggregation, it'll give you the correctly weighted rate based on all clicks and all opens in the sample.
 
 * Similarly, consider _SUM(email_clicked)/SUM(email_sent)_ for the click rate, _SUM(email_clicked)/SUM(email_opened)_ for the click-open rate, _SUM(email_unsubscribes)/SUM(email_sent)_ for the unsubscribe rate, _SUM(email_hard_bounces)/SUM(email_sent)_ for the bounce rate.
 
