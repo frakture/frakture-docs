@@ -8,7 +8,7 @@ Note that detailed direct support of report customizations generally falls outsi
 
 Data Studio reports connect to data objects (tables or views) in the warehouse. Google calls these _Data Sources_.
 
-<div style="float:right; width:250px; padding:4px; background-color:#E8E8E8"><div style="position:relative; width:240px; float:right;" align=center>Many of these same calculations can be defined within a single report itself, using similar syntax. When defining the metrics for a single chart or table, click "Create Field", and you can build your calculation on the fly!
+<div style="float:right; width:250px; padding:4px; background-color:#E8E8E8"><div style="position:relative; width:240px; float:right;" align=center>Many of these same calculations can be defined within a single report chart, using similar syntax. When creating the metrics for a single chart or table, click "Create Field", and you can build your calculation on the fly!
 
 ![Adding a local calculated field to only a single chart](gds_createfield.png)
 
@@ -50,4 +50,4 @@ Frakture data objects serve a large number of integer or decimal fields that can
 
 * Similarly, consider _SUM(email_clicked)/SUM(email_sent)_ for the click rate, _SUM(email_clicked)/SUM(email_opened)_ for the click-open rate, _SUM(email_unsubscribes)/SUM(email_sent)_ for the unsubscribe rate, _SUM(email_hard_bounces)/SUM(email_sent)_ for the bounce rate.
 
-* Some shops prefer to calculate rates relative only to emails that actually hit the inbox. To do that just make the numerator into opens minus bounces, like so: _SUM(email_clicked)/(SUM(email_opened)-SUM(email_hard_bounces))_
+* Some shops prefer to calculate rates relative only to emails that actually hit the inbox. To do that just make the denominator into opens minus bounces, like so: _SUM(email_clicked)/(SUM(email_opened)-SUM(email_hard_bounces))_
