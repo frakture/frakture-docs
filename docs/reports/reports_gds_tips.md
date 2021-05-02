@@ -30,7 +30,7 @@ Here are a few common calculations you might want to consider.
 
 ### Timestamp fields ###
 
-Frakture date fields (such as "ts" (timestamp) on transaction tables, or "publish_date" on message tables, or just "date" on various summary-by-date tabes) give a full _YYYY-MM-DD HH:MM:SS_ date.
+Frakture date fields (such as "ts" (timestamp) on transaction tables, or "publish_date" on message tables, or just "date" on various summary-by-date tabes) give a full _YYYY-MM-DD HH/:MM/:SS_ date (on a 24-hour clock).
 
 * _WEEKDAY(ts)_, _WEEKDAY(publish_date)_, or _WEEKDAY(date)_ outputs the day of the week: useful if you're analyzing performance for Mondays as compared to Thursdays as compared to Saturdays. Zoom in even closer with _HOUR()_ to see if you should be sending that email first thing in the morning or wait to lunchtime.
 
