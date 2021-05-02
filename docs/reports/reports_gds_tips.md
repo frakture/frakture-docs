@@ -8,7 +8,11 @@ Note that detailed direct support of report customizations generally falls outsi
 
 Data Studio reports connect to data objects (tables or views) in the warehouse. Google calls these _Data Sources_.
 
-<div style="float:right; width:250px; padding:4px; background-color:#E8E8E8"><div style="position:relative; width:240px; float:right;" align=center>Many of these same calculations can be defined within a single report itself, using similar syntax. When defining the metrics for a single chart or table, click "Create Field", and you can build your calculation on the fly! The disadvantage to this approach is that the calculation will only be available to that single chart: if it's one that you might re-use in other charts or other reports, making the definition permanent on the Data Source will save you some legwork.</div></div>Data Sources can be enhanced in Google Data Studio past the fields they contain in the warehouse.
+<div style="float:right; width:250px; padding:4px; background-color:#E8E8E8"><div style="position:relative; width:240px; float:right;" align=center>Many of these same calculations can be defined within a single report itself, using similar syntax. When defining the metrics for a single chart or table, click "Create Field", and you can build your calculation on the fly!
+
+![Adding a local calculated field to only a single chart](gds_createfield.png)
+
+The disadvantage to this approach is that the calculation will only be available to that single chart: if it's one that you might re-use in other charts or other reports, making the definition permanent on the Data Source will save you some legwork.</div></div>Data Sources can be enhanced in Google Data Studio past the fields they contain in the warehouse.
 
 You might want to do this to capture percentages, ratios, or other figures expressing the relationship between two or more different fields: Frakture provides you the raw metric counts (such as the CRM's reported number of opens or clicks), but because different users have different data priorities and even different ways to define similar metrics, it's in your hands to create the second-order calculations that result (such as open rate or click rate).
 
@@ -32,7 +36,7 @@ Here are a few common calculations you might want to consider.
 
 Frakture date fields (such as "ts" (timestamp) on transaction tables, or "publish_date" on message tables, or just "date" on various summary-by-date tabes) give a full _YYYY-MM-DD HH/:MM/:SS_ date (on a 24-hour clock).
 
-* _WEEKDAY(ts)_, _WEEKDAY(publish_date)_, or _WEEKDAY(date)_ outputs the day of the week: useful if you're analyzing performance for Mondays as compared to Thursdays as compared to Saturdays. Zoom in even closer with _HOUR()_ to see if you should be sending that email first thing in the morning or wait to lunchtime.
+* _WEEKDAY(ts)_, _WEEKDAY(publish_date)_ or _WEEKDAY(date)_ outputs the day of the week: useful if you're analyzing performance for Mondays as compared to Thursdays as compared to Saturdays. Zoom in even closer with _HOUR()_ to see if you should be sending that email first thing in the morning or wait to lunchtime.
 
 * Conversely, zoom back out with functions like _MONTH()_, _QUARTER()_ or _YEAR()_ to capture big-picture aggregates. _WEEK()_ is an underrated star: it returns the number of the year's week that the date falls in, from 1 to 52, which is great for year-over-year performance comparison.
 
