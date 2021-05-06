@@ -1,44 +1,22 @@
-# Message Attribution vs Metadata Reporting
 
-Sometimes the easiest questions can actually result in some fairly complicated reporting questions.  This is usually because of assumptions we all have in our heads about what we 'mean' in the question.
+# Transactions vs Messages vs Source Code reporting
+## AKA The Attribution Discontinuity
 
-To illustrate the point, let's talk about the easy question "How Much Money did we raise on Facebook in January".
+So, you want to report on all messages and all transactions.  All of it.  Not hard, right?  Well, there's a couple things you need to know.  Unless you have 100% perfect attribution -- meaning every transaction is connected to one and only one message -- your choice of "where to start" becomes very important.
 
-We're going to look at these numbers in two ways
-	* Via Metadata reporting -- this is using the source code of a transaction to derive reporting information -- what Frakture calls Metadata
-	* Via Attribution reporting -- this is running reports AFTER pairing up transactions with a specific outgoing message
+Let's say you're a finance human, and believe that transactions are the most important thing.  You want to pull every transaction, and then figure out where it came from.  If there's messages without transactions attached to them, no worries, ignore those messages, at least you have all the money included!  Use the transaction_summary table.  It has a record for every donation, then (possibly empty) information about the message we can pair it up with.
 
-In an ideal world, these should be exactly the same.  Every outgoing message would have a unique correctly formatted source code, so the attributed reporting numbers for say, Facebook, would exactly match the metadata in that source code.
+Let's say you're a content human, and are looking at the world like someone who sends out messages and wants to figure out how they performed.  Donations are probably coming in elsewhere, but that's someone else's problem -- you want every message you've sent and how they've performed.  Awesome.  Use the global_message_summary table, or it's sibling, the global_message_summary_by_date.  It has an entry for every message, and then (possibly empty) data about transactions from that.
 
-In the real world, these can diverge quite quickly.
+And in fact, if every transaction is perfectly attributed, you'll get the exact same results ... although structured slightly differently ... because everything pairs up.
 
-Let's look at just 4 transactions -- 2 that we can directly pair up with a Facebook Ad (via automated attribution), and two we can't.
-
-| Transaction Date         	| Amount | Source Code | Automatically attributed to a FB Ad first published on Jan 1 |
-| ------------- |:-------------:| -----:| -----:|
-| Jan 1         | $1 | FB_ABC_123 | No |
-| Jan 7         | $7 | Facebook_123 | No |
-| Jan 15         | $15 | FB_123 | Yes |
-| Feb 2         | $20 | ABC_123 | Yes |
+Sadly, that's often not the case.  So we also provide another view of your data -- the source_code_summary_by_date.  It starts at the source code, and adds up all transactions with that source code, and then aggregates the statistics of messages with that source code.  (It uses a messages primary source code so there's not duplicates).  With this table, you can show a Source code, how much money it raised, how much you spent on it, how many impressions/clicks/opens on it.  If we can break out the source code, you can then roll that up by channel, or by campaign -- however you want to.
 
 
-If we pull this report, we see the following 6 possible combinations of results.
-##Jan 1 -> Jan 31 report
 
-|         | Description           |  By Transaction Date  | By Publish Date |
-| ------------- |:-------------:| -----:| -----:|
-| Based on Transaction Source Code      |  A source code that exactly matches 'FB*' | $16|$15  |
-| Based on Attribution      | A source code that has a matching source code with a FB Ad |   $15 |$35  |
-| Humans | (manual rollup of FB+Facebook source codes)     |    $23| N/A (no attribution) |
-
-
-If you're using humans, you might report $23.  If you're using automated attribution, and you elect the transaction source code as preferred, you'd report $16 (Facebook is easily identifiable to humans, but not bots).  If you want to see how a specific ad published in January performed, you might report $35.
-
-
-Realizing that Frakture supports a number of use cases, here's the tables you'll want to use depending on how you prefer to report:
-
-|         | Description           |  By Transaction Date  | By Publish Date |
-| ------------- |:-------------:| -----:| -----:|
-| Based on Transaction Source Code      |  A source code that exactly matches 'FB*' | *summary_by_date* table, Metadata* columns| summary_table, metadata* columns |
-| Based on Attribution      | A source code that has a matching source code with a FB Ad |   summary_by_date table, attribution* columns |summary table, attribution* columns  |
-| Humans | (manual rolloup FB+Facebook)     |    (your custom tables)| N/A (no attribution) |
+## Tables you'll want to use
+|         | Description           |  Tables |
+| ------------- |:-------------:| -----:|
+| Based on Transactions      |  You must have all transactions | transaction_summary |
+| Based on Messaging      | Your must have all messages (ads/emails/etc) |  global_message_summary & global_message_summary_by_date (for ads) |
+| Based on Source Codes      | You want it all, and source coding is good. |   source_code_summary_by_date  |
